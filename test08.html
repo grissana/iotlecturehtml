@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  list tag (block tag) แท็กสําหรับรายการ -->
+    <!-- unordered list tag -->
+    <ul type = "circle">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+    <!-- Ordered list tag -->
+    <ol type = "A">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ol>
+    <!-- Description/Definition list tag -->
+    <dl>
+        <dt>Apple</dt>
+        <dd>Red fruit</dd>
+        <dt>Banana</dt>
+        <dd>Yellow fruit</dd>
+        <dt>Cherry</dt>
+        <dd>Red fruit</dd>
+    </dl>
+    <!--  table tag (block tag) แท็กสําหรับการสร้างตาราง -->
+    <table border = "1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+        </tr>
+    </table>
+
+
+    
+    <!--  form tag (block tag) แท็กสําหรับการสร้างฟอร์ม -->
+    <form>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username"><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <!--  iframe tag (inline tag) แท็กสําหรับการแสดงเนื้อหาจากเว็บอื่น -->
+    <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" width="560" height="315"></iframe>
+    <!--  audio tag (inline tag) แท็กสําหรับการแสดงไฟล์เสียง -->
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!--  video tag (inline tag) แท็กสําหรับการแสดงไฟล์วิดีโอ -->
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov
+        bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!--  canvas tag (block tag) แท็กสําหรับการวาดภาพ -->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    <!--  svg tag (block tag) แท็กสําหรับการวาดภาพเวกเตอร์ -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <!--  map tag (block tag) แท็กสําหรับการสร้างแผนที่ -->
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html">
+    </map>
+    <!--  object tag (block tag) แท็กสําหรับการแสดงไฟล์อื่นๆ -->
+    <object data="https://www.w3schools.com/html/horse.mp3" width="200" height="50">
+        <embed src="https://www.w3schools.com/html/horse.mp3" width="200" height="50">
+    </object>
+    <!--  embed tag (inline tag) แท็กสําหรับการแสดงไฟล์อื่นๆ -->
+    <embed src="https://www.w3schools.com/html/horse.mp3" width="200" height="50">
+    <!--  param tag (inline tag) แท็กสําหรับการกําหนดค่าในแท็กอื่นๆ -->
+    <object width="400" height="400">
+        <param name="movie" value="https://www.youtube.com/v/tgbNymZ7vqY">
+        <embed src="https://www.youtube.com/v/tgbNymZ7vqY" type="application/x-shockwave-flash" width="400" height="400">
+    </object>
+    <!--  meter tag (inline tag) แท็กสําหรับการแสดงค่าเป็นเมตร -->
+    <meter value="0.5" min="0" max="1"></meter>
+    <!--  progress tag (inline tag) แท็กสําหรับการแสดงความก้าวหน้า -->
+    <progress value="0.5" max="1"></progress>
+    <!--  details tag (block tag) แท็กสําหรับการแสดงรายละเอียด -->
+    <details>
+        <summary>Click me</summary>
+        <p>Hello World!</p>
+    </details>
+    <!--  summary tag (inline tag) แท็กสําหรับการแสดงสรุป -->
+    <summary>Click me</summary>
+    <!--  command tag (inline tag) แท็กสําหรับการสร้างคําสั่ง -->
+    <command>Click me</command>
+    <!--  menu tag (block tag) แท็กสําหรับการสร้างเมนู -->
+    <menu>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </menu>
+    <!--  output tag (inline tag) แท็กสําหรับการแสดงผลลัพธ์ -->
+    <output></output>
+    <!--  keygen tag (inline tag) แท็กสําหรับการสร้างคีย์ -->
+    <keygen></keygen>
+    <!--  time tag (inline tag) แท็กสําหรับการแสดงเวลา -->
+    <time datetime="2023-01-01">January 1, 2023</time>
+
+
+</body>
+</html>

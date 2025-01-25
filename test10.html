@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form tag -->
+    <!-- เป็นแท็กที่เกี่ยวกับการป้อนหรือข้อมูลผู้ใช้ -->
+    <!-- รายละเอียดของ form เป็น (inline tag) -->
+    <!-- method : Post, Put, Patch, Delete, Get -->
+    <form action="" method="" enctype="multipart/form-data">
+      <label for="">ป้อนตัวเลข</label>
+      <input type="number" name="" id="" required placeholder="Number" /><br />
+      <label for="username">Username</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        required
+        placeholder="Username"
+      /><br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        placeholder="Password"
+      /><br />
+      <label for="">Email</label>
+      <input type="eail" name="" id="" placeholder="Email" />
+      <br />
+      <label for="">เลือกคำนำหน้านาม</label>
+      <input type="radio" name="title" id="" value="mr" checked />นาย
+      <input type="radio" name="title" id="" value="mrs" />นาง
+      <input type="radio" name="title" id="" value="miss" />นาวสาว
+      <input type="radio" name="title" id="" value="boy" />ด.ช.
+      <input type="radio" name="title" id="" value="girl" />ด.ญ.
+      <!-- Dropdown list  -->
+      <label for="">เลือกจังหวัด</label>
+      <select name="province" id="">
+        <option value="bangkok">กรุงเทพมหานคร</option>
+        <option value="phayao">พะเยา</option>
+        <option value="phrae">แพร่</option>
+        <option value="phatthalung">พัทลุง</option>
+        <option value="phichit">พิจิตร</option>
+        <option value="phetchabun">เพชรบูรณ์</option>
+        <option value="phetchaburi">เพชรบุรี</option>
+        <option value="phra nakhon si ayutthaya">พระนครศรีอยุธยา</option>
+        <option value="phrae">พะเยา</option>
+        <option value="phuket">ภูเก็ต</option>
+        <option value="maha sarakham">มหาสารคาม</option>
+        <option value="mukdahan">มุกดาหาร</option>
+        <option value="mae hong son">แม่ฮ่องสอน</option>
+        <option value="yasothon">ยโสธร</option>
+        <option value="yala">ยะลา</option>
+        <option value="ratchaburi">ราชบุรี</option>
+        <option value="ranong">ระนอง</option>
+        <option value="ratchaburi">ราชบุรี</option>
+      </select>
+      <!-- เลือกได้มากกว่า 1 -->
+      <label for="">เลือกอาหารที่ชอบ</label>
+      <input type="checkbox" name="food1" id="" value="pizza" />Pizza
+      <input type="checkbox" name="food2" id="" value="burger" />Burger
+      <input type="checkbox" name="food3" id="" value="pasta" />Pasta
+      <input type="checkbox" name="food4" id="" value="steak" />Steak
+      <br />
+      <!-- เลือกวันที่ -->
+      <label for="">เลือกวันที่</label>
+      <input type="date" name="" id="" />
+      <br />
+      <!-- เลือกเวลา -->
+      <label for="">เลือกเวลา</label>
+      <input type="time" name="" id="" />
+      <br />
+      <!-- เลือกได้ทั้งวันและเวลา -->
+      <label for="">เลือกวันและเวลา</label>
+      <input type="datetime-local" name="" id="" />
+      <br />
+      <!-- เลือกไฟล์ -->
+      <label for="">เลือกไฟล์</label>
+      <!-- accept "image/*" ".jpg, .jpeg, .png .pdf .doc" -->
+      <input type="file" name="" id="" accept=".pdf , .doc" />
+      <br />
+      <input type="hidden" name="" id="" value="hidden" />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+      <button>Button</button>
+    </form>
+  </body>
+</html>

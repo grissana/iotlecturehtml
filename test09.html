@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- tavle tag (block tag) -->
+    <h2>ตารางแบบที่ 1 ทุก cell ในแนวตั้งมีขนาดเท่ากัน</h2>
+    <table border="1" width="500px">
+      <tr>
+        <td>a</td>
+        <td>b</td>
+        <td>c</td>
+        <td>d</td>
+        <td>e</td>
+      </tr>
+      <tr>
+        <td>f</td>
+        <td>g</td>
+        <td>h</td>
+        <td>i</td>
+        <td>j</td>
+      </tr>
+      <tr>
+        <td>k</td>
+        <td>l</td>
+        <td>m</td>
+        <td>n</td>
+        <td>o</td>
+      </tr>
+      <tr>
+        <td>p</td>
+        <td>q</td>
+        <td>r</td>
+        <td>s</td>
+        <td>t</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <h2>ตารางแบบที่ 2 ทุก cell ในแนวตั้งอาจจะมีขนาดไม่เท่ากัน</h2>
+    <table border="1" width="500px">
+      <tr>
+        <td colspan="2">11</td>
+        <td>11</td>
+        <td>11</td>
+        <td rowspan="2">11</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td colspan="2" rowspan="2">22</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td rowspan="2">33</td>
+        <td>33</td>
+        <td>33</td>
+      </tr>
+      <tr>
+        <td>44</td>
+        <td colspan="3">44</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <h2>ตารางแบบที่ 2 ทำกันเอง</h2>
+    <table border="1" width="300px">
+      <tr>
+        <td colspan="2" rowspan="2">11</td>
+        <td>11</td>
+        <td colspan="2">11</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>22</td>
+        <td rowspan="4">22</td>
+      </tr>
+      <tr>
+        <td>33</td>
+        <td colspan="3">33</td>
+      </tr>
+      <tr>
+        <td rowspan="3">44</td>
+        <td colspan="3">44</td>
+      </tr>
+      <tr>
+        <td>55</td>
+        <td rowspan="2">55</td>
+        <td>55</td>
+      </tr>
+      <tr>
+        <td>66</td>
+        <td>66</td>
+        <td>66</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <h2>ตารางแบบที่ 3 แบบมีหัวตาราง (แนวนอน)</h2>
+    <table border="1" width="300px">
+      <tr>
+        <th>No.</th>
+        <th>ชื่อ - สกุล</th>
+        <th>อายุ</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>เกด</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>เกมส์</td>
+        <td>25</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <h2>ตารางแบบที่ 3 แบบมีหัวตาราง (แนวตั้ง)</h2>
+    <table border="1" width="300px">
+      <tr>
+        <th>No.</th>
+        <td>ชื่อ - สกุล</td>
+        <td>อายุ</td>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>เกด</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>เกมส์</td>
+        <td>25</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <h2>ตารางแบบที่ 4 แบบที่มีการแบ่งสัดส่วนของตาราง</h2>
+    <table border="1" width="300px">
+      <caption>
+        <h3>รายการซื้อสินค้า</h3>
+      </caption>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>ชื่อสินค้า</th>
+          <th>ราคา</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>เสื้อ</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>กางเกง</td>
+          <td>700</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>กระเป๋า</td>
+          <td>1000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">รวม</td>
+          <td>2200</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
